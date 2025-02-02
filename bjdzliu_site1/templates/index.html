@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>hello world</title>
+    </head>
+    <body>
+        <p>Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design.</p>
+
+        <p> <a href="/getinfo?name=user001">测试get方法</a></p>
+
+        <form action="/submitinfo" method="post">
+            {% csrf_token %}
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+
+
+    </body>
+</html>
